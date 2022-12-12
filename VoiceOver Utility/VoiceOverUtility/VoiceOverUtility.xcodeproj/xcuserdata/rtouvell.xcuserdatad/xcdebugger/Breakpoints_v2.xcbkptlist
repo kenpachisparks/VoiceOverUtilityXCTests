@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C8514F43-6661-4AE7-B40C-A3F7E320E0DE"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0235F520-DF5D-4C2A-8AED-BD46B9B34B3C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VoiceOverUtilityUITests/VoiceOverUtilityUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "171"
+            endingLineNumber = "171"
+            landmarkName = "testBasicReset()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0235F520-DF5D-4C2A-8AED-BD46B9B34B3C - e48443644f6e5859"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VoiceOverUtilityUITests.VoiceOverUtilityUITests.testBasicReset() throws -&gt; ()"
+                  moduleName = "VoiceOverUtilityUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rtouvell/Documents/VoiceOver%20Utility/VoiceOverUtility/VoiceOverUtilityUITests/VoiceOverUtilityUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "171"
+                  endingLineNumber = "171"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "0235F520-DF5D-4C2A-8AED-BD46B9B34B3C - 3b901c1effdcc76d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.XCTActivity) -&gt; () in VoiceOverUtilityUITests.VoiceOverUtilityUITests.testBasicReset() throws -&gt; ()"
+                  moduleName = "VoiceOverUtilityUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rtouvell/Documents/VoiceOver%20Utility/VoiceOverUtility/VoiceOverUtilityUITests/VoiceOverUtilityUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "172"
+                  endingLineNumber = "172"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
