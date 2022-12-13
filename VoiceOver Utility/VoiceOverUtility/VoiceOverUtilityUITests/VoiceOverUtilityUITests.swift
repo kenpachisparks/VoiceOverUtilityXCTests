@@ -168,10 +168,14 @@ class VoiceOverUtilityUITests: XCTestSetup {
     }
     
     func testBasicReset() throws {
-            XCTContext.runActivity(named: "Running testSelectVoiceOverRecognitionFromViewMenu") { _ in
+            XCTContext.runActivity(named: "Running testBasicReset") { _ in
+                XCTAssertTrue(mainWindow.voiceOverModifierControlOptionAndCaps.exists, "Default Setting for Modifier is changed.")
+                helperFunctions.click(elemetToClick: mainWindow.voiceOverModifierControlOptionAndCaps)
+                helperFunctions.click(elemetToClick: mainWindow.voiceOverModifierCapsPopUpButton)
+                XCTAssertTrue(mainWindow.voiceOverModifierCaps.exists, "Caps is not set to the Modifier.")
                 helperFunctions.click(elemetToClick: menuBar.resestBasicVoiceOverPreferencesItemButton)
-                helperFunctions.click(elemetToClick: menuBar.resestBasicVoiceOverPreferencesItemButton)
-                XCTAssertTrue(helperFunctions.elementSelected(elemetToClick: mainWindow.voiceOverRecognitionTabButton), "VoiceOverRecognition Is not Selected")
+                helperFunctions.click(elemetToClick: mainWindow.resetBasicSheetButton)
+                XCTAssertTrue(mainWindow.voiceOverModifierControlOptionAndCaps.exists, "Clicking Reset Basic VoiceOverPreferences failed to reset the setting.")
             }
     }
 }
