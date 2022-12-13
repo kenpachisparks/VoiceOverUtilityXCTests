@@ -10,9 +10,11 @@ import Foundation
 
 public class MainWindow: NSViewController {
     var app = ViewVariablePage().app
+    static let reset = "Reset"
     
     struct voiceOverModifierLabels {
         static let controlOptionAndCaps = "⌃⌥ or ⇪"
+        static let capsLock = "⇪  Caps Lock"
         static let caps = "⇪"
     }
 
@@ -27,5 +29,8 @@ public class MainWindow: NSViewController {
     var brailleTabButton: XCUIElement { app.tableRows.cells.containing(.staticText, identifier: MenuBar.viewMenuLabels.braille).firstMatch }
     var activitiesTabButton: XCUIElement { app.tableRows.cells.containing(.staticText, identifier: MenuBar.viewMenuLabels.activities).firstMatch }
     var voiceOverRecognitionTabButton: XCUIElement { app.tableRows.cells.containing(.staticText, identifier: MenuBar.viewMenuLabels.voiceOverRecognition).firstMatch }
-    var voiceOverModifierControlOptionAndCaps: XCUIElement { app.tableRows.cells.containing(.staticText, identifier: MenuBar.viewMenuLabels.voiceOverRecognition).firstMatch }
+    var voiceOverModifierControlOptionAndCaps: XCUIElement { app.popUpButtons.containing(.popUpButton, identifier: voiceOverModifierLabels.controlOptionAndCaps).firstMatch }
+    var voiceOverModifierCaps: XCUIElement { app.popUpButtons.containing(.popUpButton, identifier: voiceOverModifierLabels.caps).firstMatch }
+    var voiceOverModifierCapsPopUpButton: XCUIElement { app.popUpButtons.menus.menuItems.matching(.menuItem, identifier: voiceOverModifierLabels.capsLock).firstMatch }
+    var resetBasicSheetButton: XCUIElement { app.sheets.buttons.matching(identifier: MainWindow.reset).firstMatch }
 }
